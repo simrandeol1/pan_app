@@ -3,7 +3,6 @@ package com.example.myapplication
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -36,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         binding.monthEdt.addTextChangedListener(monthTextWatcher)
         binding.yearEdt.addTextChangedListener(yearTextWatcher)
 
-        binding.panEdt.setOnFocusChangeListener { view, b ->
+        binding.panEdt.setOnFocusChangeListener { _, b ->
             if(b){
                 binding.panEdt.background = resources.getDrawable(R.drawable.pan_selected)
             }
@@ -45,7 +44,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        binding.dateEdt.setOnFocusChangeListener { view, b ->
+        binding.dateEdt.setOnFocusChangeListener { _, b ->
             if(b){
                 binding.dateEdt.background = resources.getDrawable(R.drawable.bday_selected)
             }
@@ -54,7 +53,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        binding.monthEdt.setOnFocusChangeListener { view, b ->
+        binding.monthEdt.setOnFocusChangeListener { _, b ->
             if(b){
                 binding.monthEdt.background = resources.getDrawable(R.drawable.bday_selected)
             }
@@ -63,7 +62,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        binding.yearEdt.setOnFocusChangeListener { view, b ->
+        binding.yearEdt.setOnFocusChangeListener { _, b ->
             if(b){
                 binding.yearEdt.background = resources.getDrawable(R.drawable.bday_selected)
             }
@@ -123,7 +122,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setClickListener(){
         binding.nextBtn.setOnClickListener {
-            var bool = model.checkValidity()
+            val bool = model.checkValidity()
             if(bool) {
                 binding.nextBtn.isEnabled = bool
                 finish()
