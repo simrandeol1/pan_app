@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Pan Registration</string>
+    <string name="app_name">epiFi</string>
     <string name="pan_number">PAN NUMBER</string>
     <string name="logo">S.</string>
     <string name="title">First of the few steps to set you up with a Bank Account.</string>

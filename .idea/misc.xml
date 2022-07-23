@@ -6,11 +6,13 @@
         <entry key="app/src/main/res/drawable/bday_selected.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/bday_unselected.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/black_cursor.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_ef_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/pa_unselected.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/pan_selected.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/pan_unselected.xml" value="0.2085" />
         <entry key="app/src/main/res/drawable/purple_cursor.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_ef.xml" value="0.1" />
       </map>
     </option>
   </component>
